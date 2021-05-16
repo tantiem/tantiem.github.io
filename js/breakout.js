@@ -19,13 +19,13 @@ var paddleX = (canvas.width - paddleWidth) / 2;
 var moveRight = false;
 var moveLeft = false;
 
-var brickRowCount = 3;
-var brickColumnCount = 5;
-var brickWidth = 75;
-var brickHeight = 20;
-var brickPadding = 10;
+var brickRowCount = 7;
+var brickColumnCount = 9;
+var brickWidth = 52;
+var brickHeight = 15;
+var brickPadding = 1;
 var brickOffsetTop = 30;
-var brickOffsetLeft = 30;
+var brickOffsetLeft = 2;
 
 var score = 0;
 var lives = 3;
@@ -173,7 +173,7 @@ function checkBallPos()
 function gameOver()
 {
     lives -= 1;
-    if(lives <= 0)
+    if(lives == 0)
     {
         alert("Game over bro");
         document.location.reload();
