@@ -1,0 +1,13 @@
+#scrollContainer {
+    height: 200px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#scrollContainer > img {
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+}
