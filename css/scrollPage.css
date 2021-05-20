@@ -1,13 +1,19 @@
 #scrollContainer {
-    height: 200px;
-    background-color: aliceblue;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
 }
+
 #scrollContainer > img {
     max-width: 200px;
     max-height: 200px;
     position: relative;
+}
+#scrollButton {
+    margin: 0 auto;
+    vertical-align: middle;
+    position: relative;
+    left: 50%;
+    right: 50%;
 }
