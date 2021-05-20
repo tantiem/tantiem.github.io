@@ -1,7 +1,9 @@
 #scrollContainer {
-    display: inline-block;
+    display: flex;
+    flex-flow: row nowrap;
     position: relative;
-    width: 100%;
+    justify-content: center;
+    height:200px;
     text-align: center;
 }
 

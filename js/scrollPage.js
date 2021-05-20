@@ -22,7 +22,7 @@ $(document).ready(function(){
             j = 0;
         }
         let k = j;
-        for(let i = 0; i < 5; i++)
+        for(let i = 0; i < 4; i++)
         {
 
             k++;
@@ -36,7 +36,7 @@ $(document).ready(function(){
                 case 0:
                     content += "<img src="+images[k]+" id=\"first\" style=\"opacity: 0.5;\">\n";
                     break;
-                case 4:
+                case 3:
                     content += "<img src="+images[k]+" id=\"last\" style=\"display: none;opacity: 0.5;\">\n";
                     break;
                 default:
