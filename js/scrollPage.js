@@ -47,7 +47,7 @@ $(document).ready(function(){
         }
         
         container.html(content);
-        //$("img").css({"width":"150px","height":"150px"});
+        $("img").css({"width":"150px","height":"150px"});
         $("#first").hide("slow");
         $("#last").show("slow");
     });
@@ -58,8 +58,8 @@ $(document).ready(function(){
         $(this).animate(
             {
                 opacity: 1,
-                height: "+= 50px;",
-                width: "+= 50px;"
+                height: "+=50px",
+                width: "+=50px"
             }
         ,"fast")
     });
@@ -70,8 +70,8 @@ $(document).ready(function(){
         $(this).animate(
             {
                 opacity: 0.5,
-                height: "-= 50px;",
-                width: "-= 50px;"
+                height: "150px",
+                width: "150px"
             }
         ,"fast")
     });
