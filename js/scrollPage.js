@@ -1,4 +1,4 @@
-var images = ["../images/baghead.png","../images/giornoemoji.png","../images/infomaniacpfp.png","../images/unityFrozenLogo.png","../images/filler.png"];
+var images = ["../images/baghead.png","../images/turtlebeach.png","../images/infomaniacpfp.png","../images/unityFrozenLogo.png","../images/filler.png"];
 // <img src="../images/baghead.png" alt="bag head profile pic" id="pos0">
 // container.append("<img src=\""+images[i]+"\">\n");
 let button = $("#scrollButton");
