@@ -37,6 +37,7 @@ nav {
     height: auto;
     margin: 0 auto;
     padding: 100px auto;
+    z-index: 100;
 }
 
 nav > .navSeparator > a > img {
