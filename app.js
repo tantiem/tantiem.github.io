@@ -1,6 +1,8 @@
 var games = []
 
 //get references
+var BASE_URL = "https://tantiemgithubio-production.up.railway.app"
+
 var createSection = document.querySelector("#create");
 var authSection = document.querySelector("#auth");
 var viewEditArea = document.querySelector("#viewEditArea");
@@ -124,7 +126,7 @@ function createUser(firstName,lastName, email,password){
     data += "&password=" + encodeURIComponent(password);
     
 
-    fetch("http://localhost:8080/users",{
+    fetch(BASE_URL + "/users",{
         method: 'POST',
         credentials: 'include',
         body:data,
@@ -153,7 +155,7 @@ function createSession(email,password){
     data += "&password=" + encodeURIComponent(password);
     
 
-    fetch("http://localhost:8080/sessions",{
+    fetch(BASE_URL + "/sessions",{
         method: 'POST',
         credentials: 'include',
         body:data,
@@ -184,7 +186,7 @@ function createGame(title,genre, description,time,price){
     data += "&price=" + encodeURIComponent(price);
     
 
-    fetch("http://localhost:8080/games",{
+    fetch(BASE_URL + "/games",{
         method: 'POST',
         credentials: 'include',
         body:data,
@@ -197,7 +199,7 @@ function createGame(title,genre, description,time,price){
 };
 
 function getGame(game_id){
-    fetch("http://localhost:8080/games/" + game_id).then(function(response){
+    fetch(BASE_URL + "/games/" + game_id).then(function(response){
         response.json().then(function(data){
         game = data;
         console.log("game from the server", game);
@@ -208,7 +210,7 @@ function getGame(game_id){
 
 //deletes a game 
 function deleteGameFromServer(gameId){
-    fetch("http://localhost:8080/games/"+gameId,{
+    fetch(BASE_URL + "/games/"+gameId,{
         method: "DELETE",
         credentials: 'include'
     }).then(function(response){
@@ -228,7 +230,7 @@ function editGameFromServer(gameId,title,genre,description,time,price){
     data += "&time=" + encodeURIComponent(time);
     data += "&price=" + encodeURIComponent(price);
     console.log(data);
-    fetch("http://localhost:8080/games/"+gameId,{
+    fetch(BASE_URL + "/games/"+gameId,{
         method: "PUT",
         credentials: 'include',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -339,7 +341,7 @@ function AddNewListElementFromGameObject(game,listNode)
 
 //load games from a server as JSON data
 function loadGames(){
-    fetch("http://localhost:8080/games",{
+    fetch(BASE_URL + "/games",{
         credentials:'include'
     }).then(function(response){
         response.json().then(function(data){
