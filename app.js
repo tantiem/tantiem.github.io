@@ -1,7 +1,7 @@
 var games = []
 
 //get references
-var BASE_URL = "https://tantiemgithubio-production.up.railway.app"
+var BASE_URL = "https://s23-deploy-tantiem-production.up.railway.app"
 
 var createSection = document.querySelector("#create");
 var authSection = document.querySelector("#auth");
