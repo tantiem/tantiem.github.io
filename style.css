@@ -1,0 +1,99 @@
+/*
+
+e76f51
+f4a261
+e9c46a
+2a9d8f
+264653
+
+*/
+
+body
+{
+    width: 100%;
+    margin: 0 0;
+    padding: none;
+    background-color: #264653;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #e9c46a;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p,input,textarea{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button
+{
+    background-color: #e9c46a;
+    padding: 5px 5px;
+    margin: 5px 5px;
+}
+button:hover
+{
+    background-color: #f5d687;
+    padding: 7px 7px;
+    margin: 3px 3px;
+}
+button:active
+{
+    background-color: #d6af4b;
+    padding: 3px 3px;
+    margin: 7px 7px;
+}
+
+#title,#editTitle,.generatedTitle
+{
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#submissions
+{
+    text-align: center;
+    font-size: 50px;
+    padding: none;
+    margin: 0 0;
+}
+
+#viewEditArea{
+    padding-top:25px;
+    background-color: #2a9d8f;
+}
+
+#itemContainer > li{
+    text-align:center;
+    margin: 5% 5%;
+    padding: 10px 10px;
+    background-color: #e76f51;
+    text-decoration: none;
+    list-style: none;
+}
+
+#editArea{
+    text-align:center;
+    margin: 5% 5%;
+    padding: 10px 10px;
+    background-color: #e76f51;
+}
+
+#viewArea{
+    text-align: center;
+    margin: 5% 5%;
+    padding: 10px 10px;
+}
+#createArea
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5% 5%;
+    padding: 10px 10px;
+    background-color: #e76f51;
+}
+.editDeleteButtons
+{
+    display: inline-flex;
+}
